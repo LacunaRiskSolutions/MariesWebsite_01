@@ -4,24 +4,26 @@
 	<base href=""</base>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 	<link rel="stylesheet" href="baseStyle.css" </link>
-
-
-
+	<script type = "text/javascript" src="basicFunctions.js"></script>
 </head>
 <body>
 	<div class="row">
-	     <div class="col-12 menu">
-			<button class = "menubutton">Menu</button>
-			<div class="menu-content">
-			  	<a href = "">Link 1 </a>
-				<a href = "">Link 2 </a>
-				<a href = "">Link 3 </a>
+	     <div class="menu">
+			<button onclick="menuClick()" class="menubutton">Menu</button>
+			<div id="menudropdown" class="menucontent">
+				<input type="button" class="menubutton" onclick="location.href = 'index.html';" value = "Home" />
+				<input type="button" class="menubutton" onclick="location.href = 'services.html';" value = "Services" />
+				<input type="button" class="menubutton" onclick="location.href = 'profile.html';" value = "Profile" />
+				<input type="button" class="menubutton" onclick="location.href = 'testimonials.html';" value = "News and Testimonials" />
+				<input type="button" class="menubutton" onclick="location.href = 'contactpage.html';" value = "Contact" />
 			</div>
 		</div>
-		<div class="col-3">
-		  	<header>Hello!</header>
-			<p> Content is content, whichever way you look at it.</p>
+
+		<div class = "col-2"></div>
+		<div class="col-10">
+			<img src = "images/splashImageDesktopAlpha.png" class = "splashimage"></img>
 		</div>
+		<div class ="col-12"></div>
 	</div>
 </body>
 </html>
