@@ -2,28 +2,42 @@
 <html>
 <head>
 	<base href=""</base>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display" rel="stylesheet"></link>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+		integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"></link>
+	<link rel="stylesheet" href="baseStyle.css"> </link>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-	<link rel="stylesheet" href="baseStyle.css" </link>
+	<link rel="stylesheet" href="services.css"> </link>
+	<link rel="stylesheet" href="menubar.css"> </link>
 	<script type = "text/javascript" src="basicFunctions.js"></script>
 </head>
 <body>
-	<div class="row">
-	     <div class="menu">
-			<button onclick="menuClick()" class="menubutton">Menu</button>
-			<div id="menudropdown" class="menucontent">
-				<input type="button" class="menubutton" onclick="location.href = 'index.html';" value = "Home" />
-				<input type="button" class="menubutton" onclick="location.href = 'services.html';" value = "Services" />
-				<input type="button" class="menubutton" onclick="location.href = 'profile.html';" value = "Profile" />
-				<input type="button" class="menubutton" onclick="location.href = 'testimonials.html';" value = "News and Testimonials" />
-				<input type="button" class="menubutton" onclick="location.href = 'contactpage.html';" value = "Contact" />
+		<div class = "container-fluid">
+		<div class="row">
+			<div class = "col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="menu">
+					<button onclick="menuClick()" class="menubutton">Lacuna Risk Solutions</button>
+					<div id="menudropdown" class="menucontent">
+						<input type="button" class="menubutton"
+						onclick="location.href = 'index.html';" value = "Home" />
+						<input type="button" class="menubutton" onclick="location.href = 'services.html';" value = "Services" />
+						<input type="button" class="menubutton" onclick="location.href = 'profile.html';" value = "Profile" />
+						<input type="button" class="menubutton" onclick="location.href = 'testimonials.html';" value = "News and Testimonials" />
+						<input type="button" class="menubutton" onclick="location.href = 'contactpage.html';" value = "Contact" />
+					</div>
+				</div>
 			</div>
 		</div>
-
-		<div class = "col-2"></div>
-		<div class="col-10">
-			<img src = "images/splashImageDesktopAlpha.png" class = "splashimage"></img>
+		<div class = "row">
+			<div class= "col-xs-1 col-sm-1 col-md-1 col-lg-1">.</div>
+			<div class= "col-xs-10 col-sm-10 col-md-10 col-lg-10 mainColumn">
+				<h1>Lacuna Risk Solutions</h1>
+				<p>est. 2017</p>
+				<h2>Briding the gap for your business.</p>
+				<h3>Legal. Realistic. Strategic.</p>
+			</div>
+			<div class= "col-xs-1 col-sm-1 col-md-1 col-lg-1">.</div>
 		</div>
-		<div class ="col-12"></div>
 	</div>
 </body>
 </html>

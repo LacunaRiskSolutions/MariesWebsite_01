@@ -1,153 +1,74 @@
-* {
+body, html {
+	width: 100%;
+	height: 100%;
+}
+body {
+	background-image: url('images/Background_Watercolor.png');
+	background-color: white;
+	background-repeat: repeat;
+	background-size: auto 100%;
+}
+.container-fluid {
+	display: table;
+	height: 100%;
+	width: 100%;
+	overflow-y: auto;
 	box-sizing: border-box;
 }
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-/* For mobile phones: */
-[class*="col-"] {
-	float: left;
-	padding: 0px;
-	/*border: 0px solid red;*/
-     width: 100%;
-    }
-}
-@media only screen and (min-width: 600px) {
-	/* For Tablets */
-	.col-m-1 {width: 8.33%;}
-	.col-m-2 {width: 16.66%;}
-	.col-m-3 {width: 25%;}
-	.col-m-4 {width: 33.33%;}
-	.col-m-5 {width: 41.66%;}
-	.col-m-6 {width: 50%;}
-	.col-m-7 {width: 58.33%;}
-	.col-m-8 {width: 66.66%;}
-	.col-m-9 {width: 75%;}
-	.col-m-10 {width: 83.33%;}
-	.col-m-11 {width: 91.66%;}
-	.col-m-12 {width: 100%;}
-}
-@media only screen and (min-width: 768px) {
-	/* For Desktops */
-	.col-1 {width: 8.33%;}
-	.col-2 {width: 16.66%; background-color: rgba(255,255,255,0.5);}
-	.col-3 {width: 25%; background-color: rgba(255,255,255,0.5);}
-	.col-4 {width: 33.33%; background-color: rgba(255,255,255,0.5)}
-	.col-5 {width: 41.66%; background-color: rgba(255,255,255,0.5)}
-	.col-6 {width: 50%; background-color: rgba(255,255,255,0.5)}
-	.col-7 {width: 58.33%; background-color: rgba(255,255,255,0.5)}
-	.col-8 {width: 66.66%; background-color: rgba(255,255,255,0.5)}
-	.col-9 {width: 75%; background-color: rgba(255,255,255,0.5)}
-	.col-10 {width: 83.33%; background-color: rgba(255,255,255,0.5)}
-	.col-11 {width: 91.66%; background-color: rgba(255,255,255,0.5);}
-	.col-12 {width: 100%;}
+
+.padding-0{
+    padding-right:0;
+    padding-left:0;
 }
 
 img {
 	max-width: 100%;
-	height: auto;
 }
 
-html {
-    /*font-family: "Lucida Sans", sans-serif;*/
-}
-
-body {
-	background-image: url('images/backgroundImageMobile.jpg');
-	background-repeat: repeat-y;
-	background-size: cover;
-	/*border: 1px solid red;*/
-}
-
-.splashpage{
-	position: relative;
-	display: block;
-	margin: auto;
-}
-
-.splashimage{
-	display: block;
-	margin: auto;
-	max-width: 100%;
-}
-
-.menu {
-	width:100%;
-
-	min-width: 160px;
-	position: relative;
-	top: -10px;
-	display: inline-block;
-
-}
-
-.menubutton {
-	width: 100%;
-	height: 64px;
-	min-width: 160px;
-	font-size: 16px;
-	font-family: "Helvetica" "Arial" "Verdana";
-	border: none;
-	background-color: WhiteSmoke;
-}
-.menucontent {
-	display: none;
-	position: absolute;
-	width: 100%;
-	height: 32px;
-	min-width: 160px;
-	z-index: 1;
-}
-
-.menucontent button {
-	width: 100%;
-	height: 32px;
-	min-width: 160px;
-	font-size: 16px;
-	font-family: "Helvetica" "Arial" "Verdana";
-	border: none;
-	background-color: white;
-}
-.menushow { display: block; }
-
-.mainTitlePage{
-	font-family: "Helvetica" "Arial" "Verdana";
-	font-size: 112px;
+p{
+	font-size: 1em;
 	text-align: center;
-	background-color: rgba(255, 255, 255, 0.5);
+	font-family: 'Open Sans', sans-serif;
 }
 
-.tagline{
-	font-family: "Helvetica" "Arial" "Verdana";
-	font-size: 54px;
+h1{
+	font-size: 3em;
 	text-align: center;
-}
-.tagline2{
-	font-family: "Helvetica" "Arial" "Verdana";
-	font-size: 48px;
-	text-align: center;
+	text-decoration: underline;
+	font-family: "Playfair Display", serif;
 }
 
-header {
+h2{
+	font-size: 2.5em;
 	text-align: center;
-	font-size: 62px;
-	font-family: "Helvetica" "Arial" "Verdana";
+	font-family: 'Playfair Display', serif;
 }
+
+h3{
+	font-size: 2em;
+	text-align: center;
+	text-decoration: underline;
+	font-family: 'Playfair Display', serif;
+}
+
 /*EVENTUALLY CHANGE MIN-WIDTH TO MIN-DEVICE-WIDTH TO ENSURE THE
 BACKGROUND DOES NOT CHANGE IF THE USER RESIZES THEIR BROWSER */
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
     body {
-        background-image: url('images/backgroundImageMobile.jpg');
+     /*   background-image: url('images/backgroundImageMobile.jpg');
+	For use if you wish to change the background depending on screensize*/
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
     body {
-        background-image: url('images/backgroundImageDesktop.jpg');
-	   background-repeat: repeat-y;
-	   background-size:cover;
+     /*   background-image: url('images/backgroundImageMobile.jpg');
+	For use if you wish to change the background depending on screensize*/
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
     }
 }
